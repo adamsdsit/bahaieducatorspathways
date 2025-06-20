@@ -3,127 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baha'i Educators Pathways</title>
-    <!-- Favicon: A simple star as a placeholder, can be replaced -->
+    <title>Baha'i Educators Pathways - Simple Start</title>
+    <!-- Favicon: A simple star as a placeholder -->
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 24 24'%3E%3Cpath fill='%236366F1' d='M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.62L12 2L9.19 8.62L2 9.24L7.46 13.97L5.82 21L12 17.27Z'/%3E%3C/svg%3E" type="image/svg+xml">
 
     <!-- Load Tailwind CSS -->
     <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
     <style>
-        /* Custom font for a clean, modern look - Inter is loaded by default with Tailwind v3+ if not overridden */
         body {
             font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-        }
-        /* Subtle hover effect for general interactive elements */
-        .hover-lift-shadow:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-        /* Gradient background with smooth animation */
-        body.animated-bg {
             background-size: 200% 200%;
             animation: gradientShift 10s ease infinite alternate;
         }
         @keyframes gradientShift {
-            0% {
-                background-position: 0% 0%;
-            }
-            100% {
-                background-position: 100% 100%;
-            }
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 100%; }
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex flex-col justify-center items-center py-10 px-4 sm:px-6 lg:px-8 animated-bg">
-    <div class="max-w-4xl w-full bg-white p-6 sm:p-8 md:p-10 lg:p-12 rounded-xl shadow-2xl space-y-8 border border-gray-200 transition-all duration-300 ease-in-out">
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex flex-col justify-center items-center py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-xl w-full bg-white p-6 sm:p-8 md:p-10 rounded-xl shadow-2xl space-y-6 border border-gray-200 text-center">
         <!-- Header Section -->
-        <header class="text-center">
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight leading-tight">
+        <header>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3 tracking-tight leading-tight">
                 Baha'i Educators Pathways
             </h1>
-            <p class="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-                A collaborative initiative to gather and share the knowledge, research, and experiences of Baha'i educators worldwide. Our aim is to foster profound scholarship and facilitate collective learning.
+            <p class="text-md sm:text-lg text-gray-600 leading-relaxed max-w-lg mx-auto">
+                A collaborative initiative to gather and share the knowledge, research, and experiences of Baha'i educators.
             </p>
         </header>
 
-        <!-- Educator Directory Section -->
-        <section class="space-y-6 mt-8">
-            <h2 class="text-3xl font-bold text-gray-800 text-center">Our Contributors</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <!-- Example Educator Card 1: Joshua Adams -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col justify-between hover-lift-shadow transform transition-transform duration-200 ease-in-out">
-                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Joshua Adams</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">
-                        Specializing in Technology and Education. Committed to applying innovative approaches to Baha'i-inspired learning environments.
-                    </p>
-                    <a href="[https://joshuaadams.dev/about/](https://joshuaadams.dev/about/)" target="_blank" rel="noopener noreferrer"
-                       class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150"
-                       aria-label="View profile for Joshua Adams">
-                        View Profile
-                        <!-- SVG for external link icon -->
-                        <svg class="ml-2 -mr-0.5 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                    </a>
-                </div>
-
-                <!-- Example Educator Card 2: Rodney Clarken -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col justify-between hover-lift-shadow transform transition-transform duration-200 ease-in-out">
-                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Rodney Clarken</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">
-                        Author and presenter on various aspects of Baha'i education and administration.
-                    </p>
-                    <a href="[https://rodclarken.wordpress.com/](https://rodclarken.wordpress.com/)" target="_blank" rel="noopener noreferrer"
-                       class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150"
-                       aria-label="View website for Rodney Clarken">
-                        View Website
-                        <svg class="ml-2 -mr-0.5 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                    </a>
-                </div>
-
-                <!-- Example Educator Card 3: Keith Bookwalter -->
-                <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col justify-between hover-lift-shadow transform transition-transform duration-200 ease-in-out">
-                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Keith Bookwalter</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">
-                        His work and resources will soon be available online. Advocate for unity and global citizenship.
-                    </p>
-                    <a href="[https://www.williamkeithbookwalter.info/](https://www.williamkeithbookwalter.info/)" target="_blank" rel="noopener noreferrer"
-                       class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150"
-                       aria-label="View site for Keith Bookwalter">
-                        View Site Soon
-                        <svg class="ml-2 -mr-0.5 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                    </a>
-                </div>
-
-                <!-- Add more educator cards here as needed -->
-                <!-- You can copy and paste the "Educator Card" div above and fill in the details -->
-
-            </div>
-        </section>
-
         <!-- Call to Action for New Contributors -->
-        <section class="mt-8 text-center p-6 bg-blue-50 rounded-lg border border-blue-200 shadow-inner hover-lift-shadow transform transition-transform duration-200 ease-in-out">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Are you a Baha'i Educator?</h2>
-            <p class="text-gray-700 mb-6">
-                We invite you to share your valuable contributions with the community. Join our growing directory and connect with fellow educators.
+        <section class="mt-6 p-6 bg-blue-50 rounded-lg border border-blue-200 shadow-inner">
+            <h2 class="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Are you a Baha'i Educator?</h2>
+            <p class="text-gray-700 mb-6 text-sm sm:text-base">
+                We're building a resource to connect, share, and preserve valuable contributions to Baha'i education. If you are an educator, we invite you to share your information.
             </p>
             <!-- Placeholder for submission form link -->
             <a href="[https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleFormLink/viewform](https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleFormLink/viewform)" target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-lg text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition ease-in-out duration-150"
+               class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-base font-medium rounded-md shadow-lg text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition ease-in-out duration-150"
                aria-label="Submit your information to join the directory">
-                Submit Your Information
+                Submit Your Information Here
                 <!-- SVG for plus icon -->
-                <svg class="ml-3 -mr-1 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                <svg class="ml-2 -mr-0.5 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
             </a>
-            <p class="mt-4 text-sm text-gray-500">
-                (Remember to replace this with your actual Google Form link.)
+            <p class="mt-4 text-xs text-gray-500">
+                (This link is a placeholder. You will create your own Google Form.)
             </p>
         </section>
 
         <!-- Footer Section -->
-        <footer class="mt-10 text-center text-gray-500 text-sm">
+        <footer class="mt-8 text-center text-gray-500 text-xs">
             <p>&copy; <span id="currentYear"></span> Baha'i Educators Pathways. All rights reserved.</p>
-            <p class="mt-2">Inspired by the teachings of the Baha'i Faith.</p>
         </footer>
     </div>
 
