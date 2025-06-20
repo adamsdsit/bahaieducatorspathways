@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baha'i Educators Pathways</title>
-    <!-- Favicon: A simple star as a placeholder for browser tabs -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 24 24'%3E%3Cpath fill='%236366F1' d='M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.62L12 2L9.19 8.62L2 9.24L7.46 13.97L5.82 21L12 17.27Z'/%3E%3C/svg%3E" type="image/svg+xml">
+    <!-- Favicon: A simple star for browser tabs -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%236366F1' d='M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.62L12 2L9.19 8.62L2 9.24L7.46 13.97L5.82 21L12 17.27Z'/%3E%3C/svg%3E" type="image/svg+xml">
 
-    <!-- Load Tailwind CSS for essential styling -->
-    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Ensuring Inter font for clarity */
         body {
@@ -16,42 +16,136 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
+        /* Subtle transition for cards on hover */
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
     </style>
 </head>
-<body class="bg-gray-50 min-h-screen flex items-center justify-center py-10 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-2xl w-full bg-white p-8 sm:p-10 md:p-12 rounded-xl shadow-lg border border-gray-100 text-center">
-        <!-- Main Header and Description -->
-        <header class="mb-8">
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col items-center py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl w-full bg-white p-8 sm:p-10 md:p-12 rounded-xl shadow-2xl border border-gray-100 space-y-12">
+
+        <!-- Header Section -->
+        <header class="text-center">
             <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
                 Baha'i Educators Pathways
             </h1>
-            <p class="text-lg text-gray-700 leading-relaxed mx-auto">
-                A collaborative initiative to gather and share the knowledge, research, and experiences of Baha'i educators. Our aim is to foster profound scholarship and facilitate collective learning.
+            <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                A collaborative initiative to gather and share the knowledge, research, and experiences of Baha'i educators worldwide. Our aim is to foster profound scholarship and facilitate collective learning.
             </p>
         </header>
 
-        <!-- Call to Action for Submissions -->
-        <section class="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Are you a Baha'i Educator?</h2>
+        <!-- Section: The Importance of Education -->
+        <section class="text-center bg-blue-50 p-8 rounded-lg shadow-inner border border-blue-100">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-6">The Importance of Education in the Baha'i Faith</h2>
+            <p class="text-gray-700 leading-relaxed max-w-4xl mx-auto">
+                Education, in the Baha'i teachings, is not merely the acquisition of knowledge but the cultivation of both character and intellect. It is seen as a process that unfolds throughout one's life, enabling individuals to contribute to the betterment of the world. Rooted in the principle of the harmony of science and religion, Baha'i education strives to develop spiritual qualities, moral virtues, and practical skills, preparing individuals to serve humanity and advance civilization.
+            </p>
+            <p class="text-gray-700 leading-relaxed mt-4 max-w-4xl mx-auto">
+                "Man is the supreme talisman. Lack of a proper education hath, however, deprived him of that which he doth inherently possess." &mdash; Baháʼu'lláh
+            </p>
+        </section>
+
+        <!-- Section: Core Baha'i Values Guiding Education -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Unity and Diversity</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Baha'i education emphasizes the fundamental unity of humankind, transcending racial, national, and religious barriers. It also celebrates the richness of diversity, seeing it as a source of strength and beauty. Educational approaches foster a global outlook and mutual respect.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Service to Humanity</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    A core purpose of Baha'i education is to inspire individuals to dedicate their lives to the service of humanity. It cultivates a sense of responsibility towards society and equips learners with the tools to address its challenges.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Independent Investigation of Truth</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Baha'is are encouraged to independently investigate reality, free from superstition and blind imitation. Education nurtures critical thinking, curiosity, and the courage to seek truth for oneself, balancing reason with spiritual insight.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow border border-gray-100">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Equality of Men and Women</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    The Baha'i Faith upholds the full equality of men and women. Education is seen as paramount for women, as they are the first educators of the next generation, underscoring the importance of their full participation in all fields of human endeavor.
+                </p>
+            </div>
+        </section>
+
+        <!-- Educator Directory Section (Re-introduced) -->
+        <section class="space-y-6">
+            <h2 class="text-3xl font-bold text-gray-800 text-center">Our Contributing Educators</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Example Educator Card 1: Joshua Adams -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col justify-between card-hover-effect transition-all duration-200 ease-in-out">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Joshua Adams</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">
+                        Specializing in Technology and Education. Committed to applying innovative approaches to Baha'i-inspired learning environments.
+                    </p>
+                    <a href="https://joshuaadams.dev/about/" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150"
+                       aria-label="View profile for Joshua Adams">
+                        View Profile
+                        <svg class="ml-2 -mr-0.5 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Example Educator Card 2: Rodney Clarken -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col justify-between card-hover-effect transition-all duration-200 ease-in-out">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Rodney Clarken</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">
+                        Author and presenter on various aspects of Baha'i education and administration.
+                    </p>
+                    <a href="https://rodclarken.wordpress.com/" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150"
+                       aria-label="View website for Rodney Clarken">
+                        View Website
+                        <svg class="ml-2 -mr-0.5 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+
+                <!-- Example Educator Card 3: Keith Bookwalter -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col justify-between card-hover-effect transition-all duration-200 ease-in-out">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Keith Bookwalter</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">
+                        His work and resources will soon be available online. Advocate for unity and global citizenship.
+                    </p>
+                    <a href="https://www.williamkeithbookwalter.info/" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150"
+                       aria-label="View site for Keith Bookwalter">
+                        View Site Soon
+                        <svg class="ml-2 -mr-0.5 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+                <!-- Add more educator cards here as needed -->
+            </div>
+        </section>
+
+        <!-- Call to Action for New Contributors -->
+        <section class="text-center p-8 bg-blue-50 rounded-lg border border-blue-200 shadow-inner">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Join Our Community of Educators</h2>
             <p class="text-gray-700 mb-6">
-                We invite you to contribute your valuable insights and work to this growing resource.
+                Are you a Baha'i educator eager to share your insights and connect with peers? Contribute your valuable work to this growing resource.
             </p>
             <!-- Submission Link -->
-            <a href="[https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleFormLink/viewform](https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleFormLink/viewform)" target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out duration-150"
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_ExampleFormLink/viewform" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md shadow-lg text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition ease-in-out duration-150"
                aria-label="Submit your information to join the directory">
                 Submit Your Information Here
-                <!-- SVG for a simple arrow icon -->
-                <svg class="ml-2 -mr-0.5 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                <svg class="ml-3 -mr-1 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
             </a>
             <p class="mt-4 text-sm text-gray-500">
-                (Please replace this with your actual Google Form link.)
+                (Remember to replace this with your actual Google Form link.)
             </p>
         </section>
 
         <!-- Footer -->
         <footer class="mt-10 text-center text-gray-500 text-sm">
-            <p>&copy; <span id="currentYear"></span> Baha'i Educators Pathways.</p>
+            <p>&copy; <span id="currentYear"></span> Baha'i Educators Pathways. All rights reserved.</p>
+            <p class="mt-2">Inspired by the teachings of the Baha'i Faith.</p>
         </footer>
     </div>
 
